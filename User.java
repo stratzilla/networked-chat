@@ -47,7 +47,7 @@ public class User extends Connection {
      *
      * @param e - the exception to send
      */
-    static void sendSelf(Exception e) {
+    private static void sendSelf(Exception e) {
         System.out.println(" * " + e);
     }
 
@@ -56,7 +56,7 @@ public class User extends Connection {
      *
      * @return the tutorial message
      */
-    static String introMessage() {
+    private static String introMessage() {
         String toReturn = "";
         toReturn += "Welcome to the server.\n\n";
         toReturn += "Send a message prepended by @username to send "
